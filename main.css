@@ -65,15 +65,31 @@ body {
 .nav-bar {
     height: 50px;
     width: 100%;
-    max-width: 1604px;
+    max-width: 1603px;
     position: fixed;
     border-bottom: 1px solid black;
+    background-color: white; 
+}
+
+.nav-buttons li {
+    float: left;
+}
+
+.utility-buttons li {
+    float: right;
+}
+
+.logo-link {
+    float: left;
+    width: 185px;
+    margin-left: 500px;
+    padding-top: 15px;
 }
 
 .article-title {
     font-family: "nyt-cheltenham",georgia,"times new roman",times,serif;
     font-style: italic;
-    font-size: 34px;
+    font-size: 30px;
     line-height: 38px;
     font-weight: 700;
     padding: 20px 0;
@@ -91,6 +107,12 @@ body {
     padding-right: 10px;
 }
 
+.comments-preview {
+    width: 500px;
+    height: 500px;
+    float: right;
+}
+
 .article-text-para {
     margin: 20px 60px;
     font-size: 17px;
@@ -106,5 +128,5 @@ body {
 .main-image-holder {
     background: url(https://static01.nyt.com/images/2014/03/18/science/space/18cosmos/18cosmos-superJumbo.jpg);
     background-size: 100%;
-    height: 500px;
+    height: 625px;
 }
