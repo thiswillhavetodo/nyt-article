@@ -55,35 +55,192 @@ body {
     margin: 0;
 }
 
+button {
+    cursor: pointer;
+    border: none;
+    color: #000;
+    background-color: #fff;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
 .shell {
     margin: 0 auto;
     max-width: 1605px;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 1px solid #e2e2e2;;
+    border-right: 1px solid #e2e2e2;;
+    overflow-x: hidden;
+}
+
+.masthead {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 }
 
 .nav-bar {
     height: 50px;
     width: 100%;
     max-width: 1603px;
-    position: fixed;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #e2e2e2;;
     background-color: white; 
+}
+
+.nav-buttons {
+    padding-top: 10px;
 }
 
 .nav-buttons li {
     float: left;
 }
 
-.utility-buttons li {
-    float: right;
+#section-button {
+    margin-left: -20px;
+    border: 1px solid #e2e2e2;
 }
 
+.nav-buttons button {
+    font-family: "nyt-franklin",arial,helvetica,sans-serif;
+    padding: 5px 15px;
+    font-size: 10px;
+    font-weight: 800;
+    background-color: #fff;
+    height: 28px;
+}
+
+.nav-buttons button:hover {
+    background-color: #efeaea;
+}
+
+.icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px; 
+    margin-right: 5px;
+}
+
+#burger-icon {
+    background-image: url(https://a1.nyt.com/assets/article/20171004-122253/images/sprite/sprite-no-repeat.svg);
+    background-repeat: no-repeat;
+    background-position: -35px -243px;
+}
+
+#nyt-icon {
+    background-image: url(https://a1.nyt.com/assets/article/20171004-122253/images/sprite/sprite-no-repeat.svg);
+    background-repeat: no-repeat;
+    background-position: -136px -276px;
+}
+
+#search-icon {
+    background-image: url(https://a1.nyt.com/assets/article/20171004-122253/images/sprite/sprite-no-repeat.svg);
+    background-repeat: no-repeat;
+    background-position: -456px -210px;
+}
+
+.nav-button-text {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.utility-buttons li {
+    float: right;
+    padding: 0 7px;
+}
+
+.utility-buttons {
+    vertical-align: top;
+}
+
+.utility-buttons button {
+    font-family: "nyt-franklin", sans-serif;
+    padding: 9px 10px;
+    font-size: 11px;
+    font-weight: 700;
+    color: white;
+    border-radius: 3px;
+    background-color: #326891;
+    opacity: 0.7;
+}
+
+.utility-buttons button:hover {
+    opacity: 1;
+}
+
+.utility-buttons li:first-child {
+    padding-left: 0;
+}
+
+#settings-button {
+    padding: 6px;
+    background-color: #fff;
+    height: 28px;
+    width: 28px;
+    margin-right: 25px;
+}
+
+#settings {
+    background-image: url(https://a1.nyt.com/assets/article/20171004-122253/images/sprite/sprite-no-repeat.svg);
+    background-repeat: no-repeat;
+    background-position: -86px -243px;
+}
+
+#settings-button:hover {
+    background-color: #efeaea;
+}
 .logo-link {
     float: left;
     width: 185px;
-    margin-left: 500px;
-    padding-top: 15px;
+    margin-left: 25%;
+}
+
+.suggestions-bar {
+    height: 85px;
+    width: 100%;
+    max-width: 1603px;
+    border-bottom: 1px solid #e2e2e2;;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.story-links li {
+    display: inline-block;
+    width: 16.4%;
+    border-right: 1px solid #e2e2e2;;
+}
+
+li:nth-child(6) {
+    border-right: none;
+    vertical-align: top;
+}
+
+.thumbnail {
+    float: left;
+    padding: 7px;
+}
+
+.thumbnail img {
+    width: 65px;
+}
+
+.story-title {
+    font-family: "nyt-cheltenham",georgia,"times new roman",times,serif;
+    font-size: 13px;
+    line-height: 1.25;
+    padding: 15px 8px;
+    color: #000;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-title {
+    padding: 10px 0;
+    font-family: "nyt-cheltenham",georgia,"times new roman",times,serif;
+    font-size: 12px;
+    font-weight: 700;
+    border-top: 1px solid black;
 }
 
 .article-title {
@@ -93,12 +250,13 @@ body {
     line-height: 38px;
     font-weight: 700;
     padding: 20px 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #e2e2e2;
 }
 
 .container {
     height: 50px;
     padding-top: 18px;
+    position: relative;
 }
 
 .article-info p {
@@ -107,26 +265,132 @@ body {
     padding-right: 10px;
 }
 
-.comments-preview {
-    width: 500px;
-    height: 500px;
+.share-buttons {
     float: right;
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+
+.sm-share li {
+    float: left;
+    margin: 0 5px;
+}
+
+.border-before {
+    padding-left: 10px;
+    border-left: 1px solid #e2e2e2;
+}
+
+.sm-share button {
+    width: 25px;
+    height: 25px;
+}
+
+.circle-button {
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+}
+
+#facebook {
+    display: block;
+    background-image: url(https://a1.nyt.com/assets/article/20171004-122253/images/sprite/sprite-no-repeat.svg);
+    background-repeat: no-repeat;
+    background-position: -66px -54px;
+}
+
+#twitter {
+    display: block;
+    background-image: url(https://a1.nyt.com/assets/article/20171004-122253/images/sprite/sprite-no-repeat.svg);
+    background-repeat: no-repeat;
+    background-position: -129px -297px;
+}
+
+#email {
+    display: block;
+    background-image: url(https://a1.nyt.com/assets/article/20171004-122253/images/sprite/sprite-no-repeat.svg);
+    background-repeat: no-repeat;
+    background-position: -152px -21px;
+}
+
+#showall {
+    display: block;
+    background-image: url(https://a1.nyt.com/assets/article/20171004-122253/images/sprite/sprite-no-repeat.svg);
+    background-repeat: no-repeat;
+    background-position: -346px -243px;
+}
+
+#save {
+    display: block;
+    background-image: url(https://a1.nyt.com/assets/article/20171004-122253/images/sprite/sprite-no-repeat.svg);
+    background-repeat: no-repeat;
+    background-position: -405px -210px;
+    width: 16px;
+    height: 25px;
+    padding-left: 10px;
+}
+
+#comments-link {
+    display: block;
+    position: absolute;
+    top: 0;
+    border: 1px solid #333;
+    width: 30px;
+    height: 20px;
+    border-radius: 3px;
+}
+
+.comments-preview {
+    width: 360px;
+    height: 605px;
+    float: right;
+    padding: 100px 15px;
+    cursor: pointer;
+}
+
+.comments-header {
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: "nyt-franklin",arial,helvetica,sans-serif;
+    color: #326891;
+    padding-bottom: 15px;
+}
+
+.comment-info p {
+    padding-right: 10px;
+    display: inline-block;
 }
 
 .article-text-para {
-    margin: 20px 60px;
+    width: 590px;
+    margin: 20px 70px;
     font-size: 17px;
     font-family: "nyt-cheltenham",georgia,"times new roman",times,serif;
+    line-height: 1.25;
 }
 
 .main {
-    padding-top: 50px;
+    padding-top: 148px;
     width: 1125px;
     margin: 0 auto;
 }
 
-.main-image-holder {
-    background: url(https://static01.nyt.com/images/2014/03/18/science/space/18cosmos/18cosmos-superJumbo.jpg);
-    background-size: 100%;
+.main-image-holder img{
     height: 625px;
+}
+
+.caption {
+    padding-top: 5px;
+    width: 54%;
+    line-height: 1.5;
+    font-family: "nyt-cheltenham-sh",georgia,"times new roman",times,serif;
+    font-size: 14px;
+    color: #666;
+}
+
+#credit {
+    font-size: 11px;
+    color: #999;
 }
