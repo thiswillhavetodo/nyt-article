@@ -65,6 +65,11 @@ button {
 
 a {
     text-decoration: none;
+    color: #326891;
+}
+
+strong {
+    font-weight: bold
 }
 
 .shell {
@@ -235,6 +240,12 @@ li:nth-child(6) {
     overflow: hidden;
 }
 
+#trilobites {
+    position: absolute;
+    top: 8px;
+    font-size: 10px;
+}
+
 .section-title {
     padding: 10px 0;
     font-family: "nyt-cheltenham",georgia,"times new roman",times,serif;
@@ -339,28 +350,117 @@ li:nth-child(6) {
     width: 30px;
     height: 20px;
     border-radius: 3px;
+    padding-top: 2px;
+    font-size: 12px;
+}
+
+#speech-bubble-tail-back {
+    display: block;
+    position: absolute;
+    top: 19px;
+    right: 7px;
+    width: 9px;
+    height: 9px;
+    border-left: 7px solid transparent;
+    border-top: 8px solid #000;
+}
+
+#speech-bubble-tail {
+    display: block;
+    position: absolute;
+    top: 19px;
+    right: 8px;
+    width: 7px;
+    height: 9px;
+    border-left: 7px solid transparent;
+    border-top: 8px solid #fff;
 }
 
 .comments-preview {
     width: 360px;
-    height: 605px;
     float: right;
-    padding: 100px 15px;
+    margin-top: 100px;
+    padding: 15px;
     cursor: pointer;
 }
 
+.comment-head-container {
+    position: relative;
+}
+
+#mini-comments-link {
+    display: block;
+    position: absolute;
+    top: 0;
+    border: 1px solid #326891;
+    background-color: #326891;
+    width: 20px;
+    height: 12px;
+    border-radius: 3px;
+    padding-top: 2px;
+}
+
+#mini-speech-bubble-tail {
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    width: 7px;
+    height: 9px;
+    border-left: 7px solid transparent;
+    border-top: 8px solid #326891;
+}
+
+.speech-bubble-button {
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    padding-right: 25px;
+}
+
 .comments-header {
-    font-size: 12px;
-    font-weight: 700;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 11px;
+    font-weight: 800;
     font-style: normal;
     font-family: "nyt-franklin",arial,helvetica,sans-serif;
     color: #326891;
     padding-bottom: 15px;
 }
 
+.comment-holder {
+    margin-bottom: 20px;
+}
+
 .comment-info p {
     padding-right: 10px;
     display: inline-block;
+}
+
+.comment-text {
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    font-family: "nyt-franklin",arial,helvetica,sans-serif;
+    margin-bottom: 0;
+    color: #666;
+}
+
+.commenter {
+    font-weight: 800;
+    color: #000;
+}
+
+.comment-date {
+    color: #ccc;
+}
+
+.see-all {
+    font-size: 10px;
+    font-weight: normal;
+    font-family: "nyt-franklin",arial,helvetica,sans-serif;
+    color: #326891;
 }
 
 .article-text-para {
@@ -371,6 +471,10 @@ li:nth-child(6) {
     line-height: 1.25;
 }
 
+.article-text-para a {
+    text-decoration: underline;
+}
+
 .main {
     padding-top: 148px;
     width: 1125px;
@@ -378,7 +482,7 @@ li:nth-child(6) {
 }
 
 .main-image-holder img{
-    height: 625px;
+    width: 100%;
 }
 
 .caption {
@@ -393,4 +497,28 @@ li:nth-child(6) {
 #credit {
     font-size: 11px;
     color: #999;
+}
+
+.insert-container {
+    width: 945px;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #999;
+    padding: 15px 0;
+}
+
+.insert-header {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "nyt-cheltenham",georgia,"times new roman",times,serif;
+    margin-bottom: 3px;
+    color: #333;
+}
+
+.insert-intro {
+    
+}
+
+.illustrations {
+    width: 100%;
 }
