@@ -24,20 +24,18 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q {	quotes: none; }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -47,20 +45,16 @@ table {
 /* main css */
 
 
-*, *:before, *:after {
-    box-sizing: border-box;
-}
+*, *:before, *:after { box-sizing: border-box; }
 
-body {
-    margin: 0;
-}
+body { margin: 0; }
 
 button {
-    cursor: pointer;
+    padding: 0;
     border: none;
     color: #000;
     background-color: #fff;
-    padding: 0;
+    cursor: pointer;
 }
 
 a {
@@ -68,9 +62,7 @@ a {
     color: #326891;
 }
 
-strong {
-    font-weight: bold
-}
+strong { font-weight: bold; }
 
 .shell {
     margin: 0 auto;
@@ -94,13 +86,9 @@ strong {
     background-color: white; 
 }
 
-.nav-buttons {
-    padding-top: 10px;
-}
+.nav-buttons { padding-top: 10px; }
 
-.nav-buttons li {
-    float: left;
-}
+.nav-buttons li { float: left; }
 
 #section-button {
     margin-left: -20px;
@@ -108,17 +96,15 @@ strong {
 }
 
 .nav-buttons button {
-    font-family: "nyt-franklin",arial,helvetica,sans-serif;
+    height: 28px;
     padding: 5px 15px;
+    font-family: "nyt-franklin",arial,helvetica,sans-serif;
     font-size: 10px;
     font-weight: 800;
     background-color: #fff;
-    height: 28px;
 }
 
-.nav-buttons button:hover {
-    background-color: #efeaea;
-}
+.nav-buttons button:hover { background-color: #efeaea; }
 
 .icon {
     display: inline-block;
@@ -155,13 +141,11 @@ strong {
     padding: 0 7px;
 }
 
-.utility-buttons {
-    vertical-align: top;
-}
+.utility-buttons { vertical-align: top; }
 
 .utility-buttons button {
-    font-family: "nyt-franklin", sans-serif;
     padding: 9px 10px;
+    font-family: "nyt-franklin", sans-serif;
     font-size: 11px;
     font-weight: 700;
     color: white;
@@ -170,20 +154,16 @@ strong {
     opacity: 0.7;
 }
 
-.utility-buttons button:hover {
-    opacity: 1;
-}
+.utility-buttons button:hover { opacity: 1; }
 
-.utility-buttons li:first-child {
-    padding-left: 0;
-}
+.utility-buttons li:first-child { padding-left: 0; }
 
 #settings-button {
     padding: 6px;
-    background-color: #fff;
     height: 28px;
     width: 28px;
     margin-right: 25px;
+    background-color: #fff;
 }
 
 #settings {
@@ -226,25 +206,23 @@ li:nth-child(6) {
     padding: 7px;
 }
 
-.thumbnail img {
-    width: 65px;
-}
+.thumbnail img { width: 65px; }
 
 .story-title {
+    position: relative;
+    padding: 12px 6px;
     font-family: "nyt-cheltenham",georgia,"times new roman",times,serif;
     font-size: 12px;
     line-height: 1.2;
-    padding: 12px 6px;
     color: #000;
-    position: relative;
     overflow: hidden;
 }
 
 @media screen and (min-width: 1300px) {
     .story-title {
+        padding: 15px 8px;
         font-size: 13px;
         line-height: 1.25;
-        padding: 15px 8px;
     }
 }
 
@@ -263,36 +241,34 @@ li:nth-child(6) {
 }
 
 .article-title {
+    padding: 20px 0;
     font-family: "nyt-cheltenham",georgia,"times new roman",times,serif;
     font-style: italic;
     font-size: 30px;
     line-height: 38px;
     font-weight: 700;
-    padding: 20px 0;
     border-bottom: 1px solid #e2e2e2;
 }
 
 .container {
+    position: relative;
     height: 50px;
     padding-top: 18px;
-    position: relative;
 }
 
 .article-info p {
     display: inline-block;
-    font-size: 12px;
     padding-right: 10px;
+    font-size: 12px;
 }
 
-.article-info span {
-    font-weight: 700;
-}
+.article-info span { font-weight: 700; }
 
 .share-buttons {
-    float: right;
     position: absolute;
     right: 0;
     top: 12px;
+    float: right;
 }
 
 .sm-share li {
@@ -354,20 +330,18 @@ li:nth-child(6) {
     padding-left: 10px;
 }
 
-#save:hover {
-    background-position: -253px -210px;
-}
+#save:hover { background-position: -253px -210px; }
 
 #comments-link {
     display: block;
     position: absolute;
     top: 0;
-    border: 1px solid #333;
     width: 30px;
     height: 20px;
-    border-radius: 3px;
     padding-top: 2px;
     font-size: 12px;
+    border-radius: 3px;
+    border: 1px solid #333;
 }
 
 #comments-link:hover {
@@ -405,20 +379,18 @@ li:nth-child(6) {
     cursor: pointer;
 }
 
-.comment-head-container {
-    position: relative;
-}
+.comment-head-container { position: relative; }
 
 #mini-comments-link {
     display: block;
     position: absolute;
     top: 0;
-    border: 1px solid #326891;
-    background-color: #326891;
     width: 20px;
     height: 12px;
-    border-radius: 3px;
     padding-top: 2px;
+    border: 1px solid #326891;
+    background-color: #326891;
+    border-radius: 3px;
 }
 
 #mini-speech-bubble-tail {
@@ -450,9 +422,7 @@ li:nth-child(6) {
     padding-bottom: 15px;
 }
 
-.comment-holder {
-    margin-bottom: 20px;
-}
+.comment-holder { margin-bottom: 20px; }
 
 .comment-info p {
     padding-right: 10px;
@@ -460,11 +430,11 @@ li:nth-child(6) {
 }
 
 .comment-text {
+    margin-bottom: 0;
     font-size: 12px;
     font-weight: 300;
     font-style: normal;
     font-family: "nyt-franklin",arial,helvetica,sans-serif;
-    margin-bottom: 0;
     color: #666;
 }
 
@@ -473,9 +443,7 @@ li:nth-child(6) {
     color: #000;
 }
 
-.comment-date {
-    color: #ccc;
-}
+.comment-date { color: #ccc; }
 
 .comments-footer {
     border-top: 1px solid #e2e2e2;
@@ -498,9 +466,7 @@ li:nth-child(6) {
     letter-spacing: 0.001em;
 }
 
-.article-text-para a {
-    text-decoration: underline;
-}
+.article-text-para a { text-decoration: underline; }
 
 .main {
     padding-top: 148px;
@@ -509,18 +475,16 @@ li:nth-child(6) {
     margin-bottom: 25px;
 }
 
-.main-image-holder img{
-    width: 100%;
-}
+.main-image-holder img { width: 100%; }
 
 .caption {
-    padding-top: 5px;
+    margin-bottom: 40px;
     width: 54%;
+    padding-top: 5px;
     line-height: 1.5;
     font-family: "nyt-cheltenham-sh",georgia,"times new roman",times,serif;
     font-size: 14px;
     color: #666;
-    margin-bottom: 40px;
 }
 
 #credit {
@@ -529,41 +493,39 @@ li:nth-child(6) {
 }
 
 .insert-container {
+    position: relative;
     width: 945px;
     border-width: 1px 0;
     border-style: solid;
     border-color: #999;
     padding: 15px 0;
-    position: relative;
 }
 
 .insert-header {
+    margin-bottom: 5px;
     font-size: 18px;
     font-weight: 700;
     font-family: "nyt-cheltenham",georgia,"times new roman",times,serif;
-    margin-bottom: 5px;
     color: #333;
 }
 
 .insert-intro {
+    margin-bottom: 10px;
     font-size: 14px;
     font-family: "nyt-cheltenham-sh",georgia,"times new roman",times,serif;
-    margin-bottom: 10px;
     color: #666;
     line-height: 1.25;
 }
 
-.illustrations {
-    width: 100%;
-}
+.illustrations { width: 100%; }
 
 .illustration-caption {
     position: absolute;
+    width: 225px;
     font-family: nyt-franklin,arial,helvetica,sans-serif;
     font-size: 13.5px;
     line-height: 17px;
     font-weight: 300;
-    width: 225px;
 }
 
 .illustration-caption strong {
@@ -572,9 +534,7 @@ li:nth-child(6) {
     padding-right: 5px;
 }
 
-#universe {
-    top: 230px;
-}
+#universe { top: 230px; }
 
 #not-enough {
     top: 230px;
@@ -620,9 +580,7 @@ li:nth-child(6) {
     text-decoration: none;
 }
 
-.insert-credit a:hover {
-    text-decoration: underline;
-}
+.insert-credit a:hover { text-decoration: underline; }
 
 .insert-holder {
     margin-top: 40px;
@@ -631,9 +589,7 @@ li:nth-child(6) {
     color: #666;
 }
 
-.video-iframe {
-    width: 100%;
-}
+.video-iframe { width: 100%; }
 
 .insert-caption {
     padding: 10px 0;
@@ -641,29 +597,29 @@ li:nth-child(6) {
 }
 
 .newsletter-signup {
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    margin: 5px 15px 20px 70px;
-    padding: 20px 0;
+    position: relative;
     width: 300px;
     float: left;
+    margin: 5px 15px 20px 70px;
+    padding: 20px 0;
     line-height: 1.3;
     font-weight: 700;
     font-family: "nyt-franklin",arial,helvetica,sans-serif;
-    position: relative;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
 
 .newsletter-header {
+    padding-bottom: 5px;
     font-size: 18px;
     font-weight: 800;
     letter-spacing: -0.03em;
-    padding-bottom: 5px;
 }
 
 .newsletter-intro {
+    padding-bottom: 10px;
     font-size: 13.5px;
     font-weight: 400;
-    padding-bottom: 10px;
     color: #999;
 }
 
@@ -681,11 +637,11 @@ li:nth-child(6) {
 }
 
 #newsletter-signup-btn {
-    border: 1px solid #999;
-    background-color: #eee; 
     padding: 6px 13px;
     font-weight: 800;
     font-size: 11.5px;
+    border: 1px solid #999;
+    background-color: #eee;
     border-radius: 3px;
 }
 
@@ -695,20 +651,16 @@ li:nth-child(6) {
 }
 
 .newsletter-info-links {
+    margin-top: 10px;
+    padding-top: 10px;
     font-size: 8px;
     font-weight: 400;
     border-top: 1px solid #ccc;
-    padding-top: 10px;
-    margin-top: 10px;
 }
 
-.newsletter-info-links a {
-    color: #000;
-}
+.newsletter-info-links a { color: #000; }
 
-.newsletter-info-links a:hover {
-    text-decoration: underline;
-}
+.newsletter-info-links a:hover { text-decoration: underline; }
 
 .whats-next-container {
     width: 705px;
@@ -717,20 +669,20 @@ li:nth-child(6) {
 }
 
 .foot-story-section {
-    border-top: 1px solid #ccc;
-    padding-top: 5px;
-    width: 100%;
     float: left;
     margin-top: 30px;
     margin-right: 20px;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    padding-top: 5px;
 }
 
 .foot-story-header {
+    float: left;
+    padding: 5px 0;
     font-weight: 700;
     font-family: "nyt-franklin",arial,helvetica,sans-serif;
     font-size: 16px;
-    padding: 5px 0;
-    float: left;
 }
 
 .foot-story-link {
@@ -740,18 +692,14 @@ li:nth-child(6) {
     font-size: 11px;
 }
 
-.trending-link {
-    float: left;
-}
+.trending-link { float: left; }
 
 .stories-container {
     height: 480px;
     clear: both;
 }
 
-#single-line {
-    height: 240px;
-}
+#single-line { height: 240px; }
 
 .foot-story-holder {
     width: 210px;
@@ -761,9 +709,7 @@ li:nth-child(6) {
     padding-top: 5px;
 }
 
-.foot-story-holder:nth-child(3n) {
-    margin-right: 0;
-}
+.foot-story-holder:nth-child(3n) { margin-right: 0; }
 
 .foot-story-holder p {
     font-size: 14.5px;
@@ -773,9 +719,7 @@ li:nth-child(6) {
     color: #000;
 }
 
-.foot-story-holder p:hover {
-    text-decoration: underline;
-}
+.foot-story-holder p:hover { text-decoration: underline; }
 
 #trilobites-footer {
     font-size: 11px;
@@ -788,24 +732,22 @@ li:nth-child(6) {
 }
 
 .foot-trending-section {
-    border-top: 1px solid #ccc;
-    padding-top: 5px;
-    float: left;
     margin-top: 30px;
     margin-left: 60px;
     width: 360px;
+    float: left;
+    padding-top: 5px;
+    border-top: 1px solid #ccc;
 }
 
 .foot-trending-header {
+    padding: 5px 0 15px 0;
     font-weight: 700;
     font-family: "nyt-franklin",arial,helvetica,sans-serif;
     font-size: 11px;
-    padding: 5px 0 15px 0;
 }
 
-.trending-list {
-    counter-reset: li;
-}
+.trending-list { counter-reset: li; }
 
 .trending-list li{
     height: 52px;
@@ -823,15 +765,13 @@ li:nth-child(6) {
 }
 
 .trending-headline {
-    padding-top: 5px;
-    padding-right: 5px;
     width: 285px;
     float: right;
+    padding-top: 5px;
+    padding-right: 5px;
 }
 
-.trending-list li>a>p:hover {
-    text-decoration: underline;
-}
+.trending-list li>a>p:hover { text-decoration: underline; }
 
 .trending-thumbnail {
     height: 40px;
@@ -863,9 +803,7 @@ li:nth-child(6) {
     float: left;
 }
 
-.site-index-columns-holder div:nth-child(5) {
-    width: 195px;
-}
+.site-index-columns-holder div:nth-child(5) { width: 195px; }
 
 .site-index-columns-holder div:nth-child(6) {
     width: 195px;
@@ -880,9 +818,7 @@ li:nth-child(6) {
     padding-bottom: 8px; 
 }
 
-.index-nav-links li, .subscribe-nav-links li {
-    padding: 4px 0;
-}
+.index-nav-links li, .subscribe-nav-links li { padding: 4px 0; }
 
 .index-nav-links a {
     color: #000;
@@ -890,39 +826,31 @@ li:nth-child(6) {
     font-size: 13px;
 }
 
-.index-nav-links a:hover {    
-    text-decoration: underline;
-}
+.index-nav-links a:hover { text-decoration: underline; }
 
 .subscribe-nav-links a {
     color: #000;
     font-family: "nyt-franklin",arial,helvetica,sans-serif;
 }
 
-.subscribe-nav-links li {
-    font-size: 10.5px;
-}
+.subscribe-nav-links li { font-size: 10.5px; }
 
 .subscribe-nav-links li:nth-child(-n+3) {
+    padding: 6px 0;
     font-size: 14px;
     font-weight: 800;
-    padding: 6px 0;
     letter-spacing: 0.001em
 }
 
-.subscribe-nav-links li:nth-child(3) {
-    margin-bottom: 10px;
-}
+.subscribe-nav-links li:nth-child(3) { margin-bottom: 10px; }
 
 .subscribe-nav-links li:nth-child(8) {
-    padding-bottom: 10px;
     margin-bottom: 10px;
+    padding-bottom: 10px;
     border-bottom: 1px solid #e2e2e2;
 }
 
-.subscribe-nav-links a:hover {
-    text-decoration: underline;
-}
+.subscribe-nav-links a:hover { text-decoration: underline; }
 
 .subscribe-link-icon {
     display: inline-block;
@@ -934,35 +862,27 @@ li:nth-child(6) {
     background-repeat: no-repeat;
 }
 
-#home-delivery {
-    background-position: -253px -54px;
-}
+#home-delivery { background-position: -253px -54px; }
 
-#digital-subscriptions {
-    background-position: -119px -276px;
-}
+#digital-subscriptions { background-position: -119px -276px; }
 
-#crossword {
-    background-position: -375px 0;
-}
+#crossword { background-position: -375px 0; }
 
-.small-print-footer {
-    padding-top: 10px;
-}
+.small-print-footer { padding-top: 10px; }
 
 .corporate-links li {
     float: left;
-    font-size: 10.5px;
     padding-right: 5px;
     margin-right: 5px;
+    font-size: 10.5px;
     border-right: 1px solid #e2e2e2;
     letter-spacing: 0.001em
 }
 
 .corporate-links li:last-child {
-    border-right: none;
     padding-right: 0;
     margin-right: 0;
+    border-right: none;
 }
 
 .corporate-links a {
@@ -970,10 +890,6 @@ li:nth-child(6) {
     font-family: "nyt-franklin",arial,helvetica,sans-serif;
 }
 
-.corporate-links a:hover {
-    text-decoration: underline; 
-}
+.corporate-links a:hover { text-decoration: underline; }
 
-.site-admin-links {
-    float: right;
-}
+.site-admin-links { float: right; }
